@@ -31,15 +31,4 @@ export default function Home() {
       </button>
     </div>
   );
-}
-
-// Spinner CSS in styles/global.css
-.spinner {
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-left-color: #fff;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  animation: spin 1s linear infinite;
-  display: inline-block;
-}
+      }
