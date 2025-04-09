@@ -10,38 +10,38 @@ export default function Flash() {
   const [passphrase, setPassphrase] = useState('');
   const [transactions, setTransactions] = useState([]);
   const router = useRouter();
-// Wallet options with icon paths from the internet
-const wallets = [
+
+  // Wallet options with icon paths from the internet
+  const wallets = [
     { 
-        name: 'OKX Wallet', 
-        icon: 'https://www.okx.com/cdn/assets/imgs/221/8D8A8F8D8D8F8D8F.png' // OKX favicon or logo approximation
+      name: 'OKX Wallet', 
+      icon: 'https://www.okx.com/cdn/assets/imgs/221/8D8A8F8D8D8F8D8F.png' // OKX favicon or logo approximation
     },
     { 
-        name: 'Trust Wallet', 
-        icon: 'https://cdn-icons-png.flaticon.com/512/8251/8251185.png' // Trust Wallet icon from Flaticon
+      name: 'Trust Wallet', 
+      icon: 'https://cdn-icons-png.flaticon.com/512/8251/8251185.png' // Trust Wallet icon from Flaticon
     },
     { 
-        name: 'Bybit Wallet', 
-        icon: 'https://www.bybit.com/favicon.ico' // Bybit favicon (limited specific icons available)
+      name: 'Bybit Wallet', 
+      icon: 'https://www.bybit.com/favicon.ico' // Bybit favicon (limited specific icons available)
     },
     { 
-        name: 'Metamask', 
-        icon: 'https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png' // MetaMask icon from IconScout
+      name: 'Metamask', 
+      icon: 'https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png' // MetaMask icon from IconScout
     },
     { 
-        name: 'Binance Wallet', 
-        icon: 'https://cdn-icons-png.flaticon.com/512/8251/8251075.png' // Binance icon from Flaticon
+      name: 'Binance Wallet', 
+      icon: 'https://cdn-icons-png.flaticon.com/512/8251/8251075.png' // Binance icon from Flaticon
     },
     { 
-        name: 'Wallet Connect', 
-        icon: 'https://walletconnect.com/favicon.ico' // WalletConnect favicon
+      name: 'Wallet Connect', 
+      icon: 'https://walletconnect.com/favicon.ico' // WalletConnect favicon
     },
     { 
-        name: 'Bitget', 
-        icon: 'https://www.bitget.com/favicon.ico' // Bitget favicon (or use a generic "B" icon)
+      name: 'Bitget', 
+      icon: 'https://www.bitget.com/favicon.ico' // Bitget favicon (or use a generic "B" icon)
     }
-];
-  ];
+  ]; // Removed the extra `];` here
 
   // Fetch live transactions
   useEffect(() => {
@@ -177,4 +177,4 @@ const wallets = [
       <button onClick={() => router.push('/donate')} className="mt-4 ml-4 text-blue-400">Donate</button>
     </div>
   );
-}
+    }
